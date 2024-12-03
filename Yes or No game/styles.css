@@ -1,0 +1,57 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f8ff;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+    position: relative; /* Make container relative for absolute positioning of watermark */
+}
+
+.options {
+    margin-top: 20px;
+}
+
+.option {
+    padding: 15px 30px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#yes {
+    background-color: #28a745; /* Green */
+    color: white;
+}
+
+#no {
+    background-color: #dc3545; /* Red */
+    color: white;
+}
+
+.option:hover {
+    opacity: 0.8;
+}
+
+.response {
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+/* Watermark styles */
+.watermark {
+    position: absolute; /* Position it within the container */
+    bottom: 10px; /* Adjust as needed */
+    right: 10px; /* Adjust as needed */
+    font-size: 20px; /* Font size of the watermark */
+    color: rgba(0, 0, 0, 0.3); /* Light color for transparency */
+    opacity: 0.5; /* Opacity for a watermark effect */
+}
